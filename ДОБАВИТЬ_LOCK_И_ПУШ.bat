@@ -10,7 +10,20 @@ cd /d "%~dp0"
 echo Проверка Git...
 git --version >nul 2>&1
 if errorlevel 1 (
-    echo [ОШИБКА] Git не установлен!
+    echo.
+    echo [ОШИБКА] Git не найден в PATH!
+    echo.
+    echo Варианты решения:
+    echo   1. Установите Git: https://git-scm.com/download/win
+    echo   2. Или используйте GitHub Desktop: https://desktop.github.com/
+    echo   3. Или добавьте package-lock.json через веб-интерфейс GitHub
+    echo      (см. файл КАК_ДОБАВИТЬ_LOCK_ЧЕРЕЗ_GITHUB.txt)
+    echo.
+    echo Открыть инструкцию? (Y/N)
+    set /p OPEN="> "
+    if /i "%OPEN%"=="Y" (
+        start notepad КАК_ДОБАВИТЬ_LOCK_ЧЕРЕЗ_GITHUB.txt
+    )
     pause
     exit /b 1
 )

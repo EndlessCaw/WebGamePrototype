@@ -1,0 +1,49 @@
+========================================
+  КАК ДОБАВИТЬ package-lock.json БЕЗ GIT
+========================================
+
+СПОСОБ 1 — Через веб-интерфейс GitHub (самый простой)
+-------------------------------------------------------
+
+1. Откройте репозиторий в браузере:
+   https://github.com/EndlessCow/EndlessCow.github.io-WebGamePrototype
+
+2. Нажмите кнопку "Add file" → "Upload files"
+
+3. Перетащите файл package-lock.json из папки:
+   f:\WebGamePrototype\package-lock.json
+
+4. Внизу страницы нажмите "Commit changes"
+
+5. Готово! GitHub Actions автоматически запустится и соберёт проект.
+
+
+СПОСОСОБ 2 — Установить Git
+-------------------------------------------------------
+
+1. Скачайте Git: https://git-scm.com/download/win
+
+2. Установите с настройками по умолчанию
+
+3. После установки перезапустите терминал/CMD
+
+4. Запустите файл: ДОБАВИТЬ_LOCK_И_ПУШ.bat
+
+
+СПОСОБ 3 — Установить GitHub Desktop (включает Git)
+-------------------------------------------------------
+
+1. Скачайте: https://desktop.github.com/
+
+2. Установите и войдите в GitHub
+
+3. В GitHub Desktop:
+   - File → Add Local Repository
+   - Выберите: f:\WebGamePrototype
+   - Нажмите "Show in Explorer" (правый клик на файл package-lock.json)
+   - Перетащите package-lock.json в окно GitHub Desktop
+   - Введите коммит: "Add package-lock.json"
+   - Нажмите "Commit to main"
+   - Нажмите "Push origin"
+
+========================================
