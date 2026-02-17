@@ -1,0 +1,31 @@
+---
+description: For game-related tasks, check docs first and update docs after if the change affects mechanics, structure, or expansion.
+alwaysApply: true
+---
+
+# Game Tasks: Check and Update Documentation
+
+When completing **game-related tasks** (mechanics, balance, new content, refactors, or any change to game logic/UI):
+
+## Before completing the task
+
+1. **Check existing documentation** so changes stay consistent:
+   - Read `docs/INDEX.md` for the doc map.
+   - Read the relevant doc: **02-game-design.md** (constants, cells, classes, items), **03-architecture.md** (state, components), or **04-expansion-guide.md** (how to add/extend).
+
+## After completing the task
+
+2. **Update documentation if the change affects**:
+   - **Constants, balance, or content** (new cell type, class, item, prices) → update `docs/02-game-design.md` (tables, numbers).
+   - **State, components, or data flow** (new state, new screens, refactor) → update `docs/03-architecture.md`.
+   - **New extension patterns or steps** → update `docs/04-expansion-guide.md`.
+   - **New doc or major section** → update `docs/INDEX.md` (add link and one-line description).
+
+## Example
+
+After adding a new "Healer" class:
+- Update **02-game-design.md**: add row to class table and to `MULTIPLIERS`; describe ability.
+- Update **04-expansion-guide.md** (optional): add a short note under "Adding a new class" if the steps differ.
+- No change to INDEX.md unless you added a new doc.
+
+Keep doc edits minimal and in the same style (tables, bullet lists). Do not duplicate full file contents.
